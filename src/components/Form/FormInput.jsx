@@ -2,7 +2,9 @@ import { React } from 'react';
 import FormValidation from './FormValidation';
 
 const FormInput = ({ input, inputValues, setInputValues }) => {
+
     const handleChange = e => setInputValues({ ...inputValues, [label] : e.target.value });
+    
     const { label, type, validations } = input;
 
     return (
